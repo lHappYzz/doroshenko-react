@@ -1,0 +1,151 @@
+.banner {
+    display: grid;
+    grid-template-columns: 0.4fr 0.6fr;
+    gap: 20px;
+
+    padding-right: 144px;
+    padding-left: 144px;
+
+}
+
+.banner .image img {
+    width: 1016px;
+    height: 828px;
+    margin: auto;
+}
+
+.title {
+    font-family: 'custom-mont', serif ;
+    font-weight: 800;
+    font-size: 98px;
+    line-height: 100px;
+    color: #131e29;
+}
+
+.content {
+    font-family: 'custom-mont', serif ;
+    font-size: 24px;
+    color: #424242;
+    margin-bottom: 82px;
+}
+
+.title .color-text{
+    color: #ffb600;
+}
+
+.banner .info-block {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    text-align: left;
+}
+
+.slick-slider > * {
+    background-color: #f4f9ff;
+}
+
+.slick-slider .slick-dots {
+    padding-bottom: 10px;
+}
+.slick-dots li.slick-active {
+    background-color: #ffb600; /* Колір активної точки */
+}
+.slick-dots li {
+    width: 16px !important;
+    height: 16px !important;
+    border-radius: 50% !important;
+    background-color: #131E29;
+}
+
+.slick-dots li button:before {
+    font-size: 0 !important;
+}
+
+.button-block > * {
+    font-family: 'custom-mont', serif ;
+    text-transform: uppercase;
+    color: #fff;
+    text-decoration: none;
+    text-align: center;
+    align-content: center;
+
+    border: none;
+    outline: none;
+    cursor: pointer;
+    border-radius: 4px;
+    width: 137px;
+    height: 42px;
+    padding: 8px 22px;
+
+    box-shadow: 0 3px 1px -2px #00000033;
+}
+
+.button-block {
+    display: flex;
+    gap: 30px;
+}
+
+.btn-actual {
+    background-color: #095fcc;
+}
+
+.btn-courses {
+    background-color: #ffb600;
+}
+
+.button-block > *:hover {
+    opacity: 0.8;
+}
+
+@media (min-width: 1230px) and (max-width: 1920px) {
+    .content {
+        font-size: 18px;
+    }
+
+    .title, .title .color-text{
+        font-size: 42px;
+        line-height: 42px;
+    }
+
+    .banner .image img {
+        width: 453px;
+        height: 356px;
+        margin: auto;
+    }
+}
+
+@media (max-width: 1229px) {
+    .banner {
+        grid-template-columns: 100%;
+        gap: 24px;
+        padding: 16px;
+    }
+
+    .banner .image img {
+        margin: auto;
+        width: 343px;
+        height: 288px;
+    }
+
+    .content {
+        font-size: 16px;
+        line-height: 22px;
+    }
+
+    .button-block {
+        gap: 30px;
+        width: 343px;
+    }
+
+    .button-block > * {
+        width: 156px;
+        height: 36px;
+        padding: 6px 16px;
+    }
+
+    .title, .title .color-text {
+        font-size: 36px;
+        line-height: 40px;
+    }
+}

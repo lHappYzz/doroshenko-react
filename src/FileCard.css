@@ -1,0 +1,70 @@
+.file-card  {
+    position: relative;
+    border: 1px solid #686f70;
+    border-radius: 4px;
+    width: 270px;
+    height: 270px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 10px 10px;
+}
+
+.doc-info {
+    font-family: 'custom-roboto', 'sans-serif';
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 20px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+    padding: 0 60px
+}
+
+.doc-logo img {
+    width: 52px;
+    height: 52px;
+}
+
+.file-actions {
+    position: absolute;
+    top: 10px;
+    gap: 10px;
+    display: flex;
+    justify-content: space-between;
+    width: 90%
+}
+
+.file-actions button, .file-operations-buttons button{
+    padding: 0;
+    border: none;
+    background: none;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.file-actions button:hover {
+    opacity: 0.7;
+}
+
+.file-operations-buttons button {;
+    color: #788182;
+}
+
+.file-operations-buttons button:hover {;
+    background-color: #e3f2f5;
+    border-radius: 4px;
+}
+
+.file-operations-buttons {
+    position: absolute;
+    bottom: 5px;
+    display: flex;
+    justify-content: space-between;
+    width: 90%
+}
+
+

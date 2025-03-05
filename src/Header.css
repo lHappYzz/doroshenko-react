@@ -1,0 +1,182 @@
+.header {
+    padding: 30px 64px;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    background: #f4f9ff;
+    color: #131E29;
+}
+
+.logo-container, .info-block, .socials, .phone, .sign-in, .header-left-block {
+    display: flex;
+}
+
+.logo-container img {
+    width: 100%;
+}
+
+.menu {
+    display: flex;
+    margin-left: 18px;
+}
+
+.menu-item > *, .phone, .cabinet {
+    font-family: 'custom-mont', sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 26px;
+}
+
+.cabinet {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.sign-in {
+    color: #131e29;
+    text-decoration: none;
+}
+
+.menu-button {
+    height: 42px;
+    padding: 8px 10px;
+    border: none;
+    outline: none;
+    background: transparent;
+    cursor: pointer;
+}
+
+.menu-button:hover {
+    opacity: 0.8;
+    transition: 0.2s ease;
+}
+
+.active {
+    background: #FFB600;
+    color: #fff;
+    box-shadow: 0 3px 1px -2px #00000033;
+    border-radius: 4px;
+}
+
+.menu-button-icon {
+    width: 9px;
+    height: 9px;
+    color: #6b6e70;
+    margin-left: 18px;
+}
+
+.active .menu-button-icon {
+    color: #fff;
+}
+
+.phone-icon {
+    rotate: 90deg;
+}
+
+.socials > *, .socials > a {
+    margin: 0 16px;
+    color: #131e29;
+    text-decoration: none;
+    font-weight: 500;
+    align-content: center;
+}
+
+.socials, .phone-icon {
+    font-size: 28px;
+}
+
+.socials {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.socials a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none; /* Забрати підкреслення у посилань */
+    color: inherit;        /* Спадкувати колір */
+}
+
+.donation-icon {
+    font-size: 43px;
+    color: #095FCC;
+    border-left: 2px #FFB600 solid;
+    border-right: 2px #FFB600 solid;
+    padding: 0 24px;
+}
+
+.cabinet-icon {
+    margin-right: 8px;
+    font-size: 20px;
+}
+
+.courses-btn.active:hover {
+    background: rgba(255, 182, 0, 0.87);
+}
+
+.submenu {
+    height: 300px;
+    width: 100%;
+    left: 0;
+    background: #fff;
+    position: absolute;
+    z-index: 2;
+    box-shadow: 0 4px 15px 0 #70809633;
+}
+
+.logo-text {
+    margin-left: 16px;
+    padding: 0 16px;
+    border-left: 2px #FFB600 solid;
+
+    font-family: 'custom-mont', sans-serif;
+    font-style: normal;
+    font-size: 10px;
+    line-height: 12px;
+
+    max-width: 170px;
+    height: 100%;
+    text-transform: uppercase;
+    color: #131E29;
+}
+
+.side-logo {
+    display: flex;
+    align-items: center;
+}
+
+@media (min-width: 1230px) and (max-width: 1920px) {
+    .menu-item > *, .phone, .cabinet {
+        font-size: 14px;
+    }
+
+    .phone-value, .logo-text {
+        display: none;
+    }
+
+    .header {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 1229px) {
+    .logo-text, .menu, .socials > *:not(.charity-icon) {
+        display: none;
+    }
+
+    .donation-icon {
+        font-size: 30px;
+        border-left: none;
+        padding: 0 16px;
+    }
+
+    .header {
+        padding: 16px;
+        justify-content: space-between;
+    }
+}

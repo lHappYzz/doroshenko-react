@@ -1,0 +1,150 @@
+@import "slick-carousel/slick/slick.css";
+@import "slick-carousel/slick/slick-theme.css";
+
+@font-face {
+  font-family: 'custom-mont';
+  src: url('./assets/fonts/mont/Mont-SemiBold.ttf');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'custom-mont';
+  src: url('./assets/fonts/mont/Mont-Bold.ttf');
+  font-weight: 800;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'custom-mont';
+  src: url('./assets/fonts/mont/Mont-Regular.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'custom-roboto';
+  src: url('./assets/fonts/Roboto/static/Roboto-Regular.ttf');
+  font-weight: 700;
+  font-style: normal;
+}
+
+#root {
+  text-align: center;
+}
+
+body {
+  margin: 0;
+}
+
+.container {
+  width: 100%;
+}
+
+.file-manager {
+  display: flex;
+  flex-direction: column;
+  padding: 34px 34px;
+  background-color: #ecfcff;
+}
+
+.file-items {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
+  justify-items: center;
+  grid-gap: 30px;
+  padding: 20px 10px;
+}
+
+.operation-button-left-block {
+  padding-right: 50px;
+}
+
+.operation-buttons, .operations {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.operation-buttons > button, .operation-button-left-block > button {
+  padding: 0;
+  border: none;
+  background: none;
+  cursor: pointer;
+  font-size: 20px;
+  color: #788182;
+}
+
+.operations img {
+  width: 28px;
+  height: 28px;
+}
+
+.select-all-btn img {
+  width: 38px;
+  height: 40px;
+}
+
+.operation-buttons > button:hover {
+  opacity: 0.7;
+}
+
+.sorting {
+  position: relative;
+  margin-left: auto;
+  border:1px solid #b6c2c4;
+  border-radius: 4px;
+
+  order: 2;
+}
+
+.sorting-field-selector {
+  height: 40px;
+  min-width: 220px;
+  background-color: transparent;
+  appearance: none;
+  font-size: 16px;
+  line-height: 24px;
+  cursor: pointer;
+  border: none;
+  color: #b6c2c4;
+  padding-left: 10px;
+}
+
+.sorting-field-selector:focus {
+  outline: none;
+}
+
+.sorting label {
+  color: #b6c2c4;
+  position: absolute;
+  top: -8px;
+  left: 8px;
+  background: #ecfcff;
+  padding: 0 4px;
+}
+
+.selector-sort-icon {
+  position: absolute;
+  right: -30px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+@media (max-width: 1229px) {
+  .operations::before {
+    content: "";
+    order: 1;
+    flex-basis: 100%;
+  }
+
+  .sorting {
+    margin-left: 0;
+  }
+
+  .file-manager {
+    padding: 34px 16px;
+  }
+}
